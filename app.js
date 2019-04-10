@@ -197,13 +197,13 @@ app.post("/modify/:id", URLencodeParser, function(req, res) {
   MongoClient.connect(URL, function(err, db) {
     if (err) throw err;
     var database = db.db("onlinestore");
-    var jsquery = { _id: new ObjectID(product_id) };
-    var newvalues = {
+    var query = { _id: new ObjectID(product_id) };
+    var updated = {
       $set: { product_name: name, price: price, category: category }
     };
     database
       .collection("products")
-      .updateOne(jsquery, newvalues, function(err, result) {
+      .updateOne(query, updated, function(err, result) {
         res.redirect("/");
       });
   });
