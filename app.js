@@ -40,13 +40,13 @@ app.get("/", function(req, res) {
 				<tr>\
 					<th>ID</th>\
 					<th>Name</th>\
-					<th>Price</th>\
+					<th>Price($)</th>\
 					<th>Category</th>\
 				</tr>';
         element.forEach(function(object) {
           var id = "<tr><td>" + object._id + "</td>";
           var name = "<td>" + object.product_name + "</td>";
-          var price = "<td>" + object.price + "</td>";
+          var price = "<td>" + object.price + " $</td>";
           var category = "<td>" + object.category + "</td>";
           product_id = object._id;
           var button_edit =
@@ -86,7 +86,7 @@ app.get("/add", function(req, res) {
 	<input type="text" name="name">\
 	<br>\
 	<label for="price">Price</label>\
-	<input type="text" name="price">\
+	<input type="number" name="price">\
 	<br>\
 	<label for="category">Category</label>\
 	<input type="text" name="category">\

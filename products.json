@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5cae30816ad7ca37e4f59a01"},"product_name":"Xiaomi Mi Air 13.3\"","price":"849","category":"Laptop"}
+{"_id":{"$oid":"5cae30e5314036383486e7e3"},"product_name":"HP NoteBook 15-DA1009NS","price":"549","category":"Laptop"}
+{"_id":{"$oid":"5cae310b314036383486e7e4"},"product_name":"HP 290-P0051NS","price":"549","category":"Workstation"}
+{"_id":{"$oid":"5cae3125314036383486e7e5"},"product_name":"Lenovo IdeaCentre 620S-03IKL","price":"479","category":"Workstation"}
+{"_id":{"$oid":"5cae3172314036383486e7e6"},"product_name":"Medion X99 Erazer","price":"6199","category":"Gaming"}
+{"_id":{"$oid":"5cae318c314036383486e7e7"},"product_name":"MSI Aegis Ti3 8RF-006EU","price":"4999","category":"Gaming"}
